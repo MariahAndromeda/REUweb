@@ -1,0 +1,44 @@
+html,body
+{
+	margin:0px;
+	padding: 0px;
+}
+header
+{
+	background-color: red;
+	height:75px;
+}
+
+.section_header
+{
+	width:80%;
+	height: 200px;
+}
+
+#dots_bar
+{
+	z-index:-1;
+	top:0px;
+	position: fixed;
+	width:10%;
+	float:left;
+	background-color:teal;
+	height:1000px;
+}
+
+#research_containter
+{
+	float:right;
+	background-color: blue;
+	width:90%;
+	/*height:500px;*/
+}
+
+section
+{
+	width:85%;
+	margin:0px auto;
+	height:400px;
+	background-color: orange;
+	margin-top:50px;
+}

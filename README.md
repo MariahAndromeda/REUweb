@@ -3,6 +3,4 @@ REUweb
 
 Website for displaying UW Madison REU research.
 
-Hello.
-
-https://wireframe.cc/cUdxSe
+<a href = 'https://wireframe.cc/cUdxSe'>Wire frame idea</a>
