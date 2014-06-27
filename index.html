@@ -1,7 +1,7 @@
-<!-- 
+<!--
 Hi, This is an HTML comment
 
-When i am developing a layout i like to make things bright colors so i can tell easily what is what, 
+When i am developing a layout i like to make things bright colors so i can tell easily what is what,
 don't worry, things wont stay this way for long.
 
 -->
@@ -15,24 +15,81 @@ don't worry, things wont stay this way for long.
 	<header>
 		<h1>Mariah Andromeda</h1>
 		<h3>Brown University</h3>
-		<a href = '#'>Contact Me</a>
+
 
 	</header>
-	<div id = 'dots_bar'></div>
+	<div id = 'dots_bar'>
+        <ul>
+            <a href = '#abstract'><li id = 'NINJA'>Abstract</li></a>
+            <a href = '#results'><li>Results</li></a>
+            <a href = '#analyses'><li>Analyses</li></a>
+            <a href = '#further_work'><li>Further Work</li></a>
+        </ul>
+
+    </div>
 	<div id = 'research_containter'>
-		<section>
-			<img class ='section_header' src = 'test.jpg'>
-		</section>
-		<section>
-		</section>
-		<section>
-		</section>
-		<section>
-		</section>
+        <section id = 'abstract'>
+            <img class ='section_header' src = 'test.jpg'>
+            <h2>Abstract</h2>
+            <p>
+               Because of the interferometric nature of modern gravitational telescopes they have non-uniform sensitivity. I have been able to create a tool for simple visualizations of single detector detection geometries for arbitrary binary neutron star inspirals. I generate a series of inspirals with random characteristics over a grid of sky positions. These are then used to calculate surfaces at which a certain percent of events would be detected by the chosen detector, these surfaces are known as percentile surfaces. As these surfaces are dependent on the rotation of the earth, I.E. the time of day, I have also added the ability to create surfaces that are time averaged over the course of a day.
+            </p>
+        </section>
+        <section id = 'results'>
+            <img class ='section_header' src = 'test.jpg'>
+            <h2>Results</h2>
+            <p>
+               Because of the interferometric nature of modern gravitational telescopes they have non-uniform sensitivity. I have been able to create a tool for simple visualizations of single detector detection geometries for arbitrary binary neutron star inspirals. I generate a series of inspirals with random characteristics over a grid of sky positions. These are then used to calculate surfaces at which a certain percent of events would be detected by the chosen detector, these surfaces are known as percentile surfaces. As these surfaces are dependent on the rotation of the earth, I.E. the time of day, I have also added the ability to create surfaces that are time averaged over the course of a day.
+            </p>
+        </section>
+        <section id = 'analyses'>
+            <img class ='section_header' src = 'test.jpg'>
+            <h2>Analysis</h2>
+            <p>
+               Because of the interferometric nature of modern gravitational telescopes they have non-uniform sensitivity. I have been able to create a tool for simple visualizations of single detector detection geometries for arbitrary binary neutron star inspirals. I generate a series of inspirals with random characteristics over a grid of sky positions. These are then used to calculate surfaces at which a certain percent of events would be detected by the chosen detector, these surfaces are known as percentile surfaces. As these surfaces are dependent on the rotation of the earth, I.E. the time of day, I have also added the ability to create surfaces that are time averaged over the course of a day.
+            </p>
+        </section>
+        <section id = 'further_work'>
+            <img class ='section_header' src = 'test.jpg'>
+            <h2>Further Work</h2>
+            <p>
+               Because of the interferometric nature of modern gravitational telescopes they have non-uniform sensitivity. I have been able to create a tool for simple visualizations of single detector detection geometries for arbitrary binary neutron star inspirals. I generate a series of inspirals with random characteristics over a grid of sky positions. These are then used to calculate surfaces at which a certain percent of events would be detected by the chosen detector, these surfaces are known as percentile surfaces. As these surfaces are dependent on the rotation of the earth, I.E. the time of day, I have also added the ability to create surfaces that are time averaged over the course of a day.
+            </p>
+        </section>
+
 	</div>
 	<div id = 'related_things'>
 	</div>
 </body>
+<script type="text/javascript">
+window.setInterval(tabs,100)
+function tabs()
+{
+    tabs = document.getElementById('dots_bar').children[0].children
+    w = window.location.hash.replace('#','')
+    if (w == 'abstract')
+        {
+            el = tabs[0]
+            
+        }
+    else if (w == 'results')
+        {
+            el = tabs[1]
+        }
+    else if (w == 'analyses')
+        {
+            el = tabs[2]
+        }
+    else if (w == 'further_work')
+        {
+            el = tabs[3]
+        };
+    for (var i = tabs.length - 1; i >= 0; i--) {
+        tabs[i].id = ''
+    };
+    el.id = 'focused'
+};
 
+</script>
 <html>
 
